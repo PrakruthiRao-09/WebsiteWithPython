@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Fantasy Quiz
+        </title>
+        <link rel="stylesheet" href="../static/styles.css">
+        <link rel="stylesheet" href="../static/styles2.css">
+        
+    </head>
+    <body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="../static/MyWebsiteLogo2.jpg" alt="logo" width="40%">
+                <span>Prakruthi's Website
+                </span>
+            </div>
+          
+        <ul>
+        <div class="dropdown">
+            <a href="/" ><button class="dropbtn">About Me</button></a>
+        </div>
+        
+            <div class="dropdown">
+               <button class="dropbtn">My Stuff</button>
+               <div class="dropdowncontent">
+                <a href="/art" >Art Gallery</a> 
+                <a href="/craft" >Craft</a> 
+                <a href="/recipes" >Recipes</a> 
+               </div>
+            </div>
+            <div class="dropdown">
+                <a href="/quiz" ><button class="dropbtn">Quizzes</button></a>
+            </div>
+            <div class="dropdown">
+                <a href="/Register" ><button class="dropbtn">Register</button></a>
+            </div>
+            <div class="dropdown">
+                <a href="/Login" ><button class="dropbtn">Login</button></a>
+            </div>
+            
+        </ul>
+        
+        </nav>
+    </header>
+    
+    <h3>Score: {{score1}}</h3>
+    <form action= "/fantasyq4" method="POST">
+            <h1> Fantasy quiz </h1>
+            <p>3. What can lure a unicorn out of hiding?</p>
+            <label for="q1">
+                Fresh fruit and carrots
+                <input type="radio" id="q1" name="question" />
+            </label>
+            <br>
+            <br>
+            <label for="q2">
+                A newly appeared rainbow
+                <input type="radio" id="q2" name="question" />
+            </label>
+                <br>
+                <br>
+            <label for="q3">
+                A person with a pure heart(usually a young maiden)
+                    <input type="radio" id="q3" name="question" />
+            </label>
+            <br>
+            <br>
+            <label for="q4">
+                Another unicorn
+                    <input type="radio" id="q4" name="question" />
+            </label>
+            <input type="hidden" name="ca" value="3">
+            <button type="submit" id= "submit1" name= "button1" class= "button">
+             Next -->
+            </button>
+        </form>
+    </body>
+</html>
